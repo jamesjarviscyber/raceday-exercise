@@ -1,0 +1,29 @@
+
+
+let raceNumber = Math.floor(Math.random() * 1000); //Base Race Number Generator
+
+let earlyRegister = true; //Variable for earlyRegister
+let age = 18; //variable for age
+
+//if statement for early register && over 18, new race number
+if (earlyRegister && age > 18) {
+  raceNumber += 1000;
+}
+
+//else if statements to decide race number and time starting
+if (earlyRegister && age > 18) {
+  console.log(`Your Number is ${raceNumber}, and your race begins at 9:30am`);
+} else if (!earlyRegister && age > 18) {
+  console.log(
+    `your race number is ${raceNumber} and your race begins at 11:00am.`
+  );
+} else if (age < 18) {
+  //<18 statements
+  console.log(
+    `Your race begins at 12:30pm, and your race number is ${raceNumber}.`
+  );
+} else if (age === 18) {
+  console.log(`Please speak to the registration for further guidance.`);
+}
+
+//Raceday regsitration complete - now time to plan the Lond Marathon...
