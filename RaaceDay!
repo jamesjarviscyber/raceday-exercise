@@ -1,3 +1,4 @@
+//Resonse to Codecademy Race Day project. JavaScript. Enjoy...
 
 
 let raceNumber = Math.floor(Math.random() * 1000); //Base Race Number Generator
